@@ -5,6 +5,5 @@ import directions from './Enums/directionsEnum.mjs';
 function randomElement (array) {
   return array[Math.floor (Math.random () * array.length)];
 }
-
-var directionNames = 'n ne e se s sw w nw'.split (' ');
+var directionNames = Object.keys (directions);
 console.log (randomElement (directionNames));
